@@ -34,6 +34,7 @@ django = ">=4.2"
 black = "~26"
 isort = "~7"
 mypy = "~1.19"
+pytest = "~9"
 
 [tool.black]
 target-version = ["py312"]
