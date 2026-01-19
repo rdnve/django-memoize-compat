@@ -1,9 +1,9 @@
 ## drop-in replacement for `django-memoize`
 
-[![python-latest](https://img.shields.io/pypi/pyversions/django-memoize-compat?logo=python&logoColor=FFE873)](https://www.python.org/downloads/)
-[![pypi](https://img.shields.io/badge/pypi-3.0.0-blue?logo=pypi&logoColor=FFE873)](https://pypi.org/project/django-memoize-compat/)
+[![python](https://img.shields.io/pypi/pyversions/django-memoize-compat?logo=python&logoColor=FFE873)](https://www.python.org/downloads/)
+[![pypi](https://img.shields.io/pypi/v/django-memoize-compat?logo=pypi&logoColor=FFE873)](https://pypi.org/project/django-memoize-compat/)
 [![status](https://img.shields.io/pypi/status/django-memoize-compat)](https://pypi.org/project/django-memoize-compat/)
-[![pypi_downloads](https://img.shields.io/pypi/dm/django-memoize-compat)](https://pypi.org/project/django-memoize-compat/)
+[![downloads](https://img.shields.io/pypi/dm/django-memoize-compat)](https://pypi.org/project/django-memoize-compat/)
 [![license](https://img.shields.io/pypi/l/django-memoize-compat)](https://github.com/rdnve/django-memoize-compat/blob/master/LICENSE)
 
 ### intro
