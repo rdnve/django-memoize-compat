@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-memoize-compat"
-version = "3.0.0"
+version = "3.0.1"
 description = "a modern, maintained drop-in replacement for the abandoned django-memoize package."
 authors = ["serje u <pleaseanswermeserjeu@icloud.com>"]
 license = "BSD-3-Clause"
