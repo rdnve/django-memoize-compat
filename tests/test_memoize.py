@@ -149,3 +149,24 @@ def test_none_is_not_cached():
     assert returns_none(1) is None
     assert returns_none(1) is None
     assert calls["count"] == 2
+
+
+def test_delete_memoized_bound_method():
+    calls = {"count": 0}
+
+    class Example:
+        @memoize(timeout=60)
+        def check(self, name):
+            calls["count"] += 1
+            return name
+
+    example = Example()
+
+    assert example.check("a") == "a"
+    assert example.check("a") == "a"
+    assert calls["count"] == 1
+
+    delete_memoized(example.check, "a")
+
+    assert example.check("a") == "a"
+    assert calls["count"] == 2

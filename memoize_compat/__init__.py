@@ -90,15 +90,15 @@ class Memoizer:
             self._bump_verhash(func)
             return
 
-        sig = inspect.signature(func)
-        bound = sig.bind_partial(*args, **kwargs)
-        bound.apply_defaults()
-
         version = self._get_verhash(func)
+
+        if inspect.ismethod(func) and func.__self__ is not None:
+            args = (func.__self__, *args)
+
         cache_key = self._make_cache_key(
             func,
-            tuple(bound.args),
-            bound.kwargs,
+            args,
+            kwargs,
             version,
         )
         self.cache.delete(cache_key)
